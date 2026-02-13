@@ -24,7 +24,7 @@ function Projects() {
             image: '/Book_management.png',
             category: 'Frontend',
             tags: ['React', 'Tailwind', 'Axios', 'Firebase'],
-            demoLink: 'https://demo.com',
+            demoLink: 'https://book-management-three-iota.vercel.app',
             githubLink: 'https://github.com/G-Kangutkar/book-management',
             date: '2025',
             featured: true,
