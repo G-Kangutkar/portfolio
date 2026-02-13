@@ -24,20 +24,20 @@ function Navbar (){
   ];
 
   // Replace this with your actual resume URL
-  const resumeUrl = '/resume.pdf';
+  const resumeUrl = 'https://drive.google.com/file/d/1QlHAeWLxBgEe5SlKvK7dgcFIFnwMh9eR/view?usp=sharing';
 
   const handleResumeClick = () => {
     window.open(resumeUrl, '_blank');
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-olive backdrop-blur-md border-b border-gray-200 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-midnight backdrop-blur-md border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="shrink-0 flex gap-3">
-            <CircleUser className='mt-2 text-burntorange text-7xl'/>
-            <a href="#home" className=" text-cream font-heading text-3xl font-bold">
+            <CircleUser className='mt-2 text-sunset text-7xl'/>
+            <a href="#home" className=" text-lavender font-heading text-3xl font-bold">
               Gauri Kangutkar
             </a>
           </div>
@@ -48,7 +48,7 @@ function Navbar (){
               <a
                 key={link.name}
                 href={link.href}
-                className="text-cream hover:text-goldenrod transition-colors duration-300 font-heading text-2xl font-bold"
+                className="text-lavender hover:text-sunset transition-colors duration-300 font-heading text-2xl font-bold"
               >
                 {link.name}
               </a>
@@ -57,7 +57,7 @@ function Navbar (){
             {/* Resume Button */}
             <Button
               onClick={handleResumeClick}
-              className="bg-mossgreen hover:bg-burntorange text-white flex items-center gap-2"
+              className="bg-sunset  hover:bg-lavender text-white flex items-center gap-2"
             >
               Resume
               <FileText className="w-4 h-4"/>
@@ -73,9 +73,9 @@ function Navbar (){
                   <Menu className="h-6 w-6 " />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-75 sm:w-100 bg-olive text-xl text-cream">
+              <SheetContent side="right" className="w-75 sm:w-100 bg-midnight text-xl text-cream">
                 <SheetHeader>
-                  <SheetTitle className="text-left text-cream ">Menu</SheetTitle>
+                  <SheetTitle className="text-left text-sunset ">Menu</SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col space-y-1 ml-5 ">
                   {navLinks.map((link) => (
@@ -83,7 +83,7 @@ function Navbar (){
                       key={link.name}
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className=" text-cream hover:text-burntorange transition-colors duration-300 py-2 font-heading text-2xl font-bold"
+                      className=" text-lavender hover:text-sunset transition-colors duration-300 py-2 font-heading text-2xl font-bold"
                     >
                       {link.name}
                     </a>
@@ -96,7 +96,7 @@ function Navbar (){
                         handleResumeClick();
                         setIsOpen(false);
                       }}
-                      className="w-60 bg-mossgreen hover:bg-burntorange text-white flex items-center justify-center gap-2 m-3"
+                      className="w-60 bg-sunset hover:bg-lavender text-white flex items-center justify-center gap-2 m-3"
                     >
                       Resume
                       <FileText className="w-4 h-4"/>
