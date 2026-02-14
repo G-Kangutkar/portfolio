@@ -36,9 +36,9 @@ function Navbar (){
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="shrink-0 flex gap-3">
-            <CircleUser className='mt-2 text-sunset text-7xl'/>
-            <a href="#home" className=" text-lavender font-heading text-3xl font-bold">
-              Gauri Kangutkar
+            {/* <CircleUser className='mt-2 text-sunset text-7xl'/> */}
+            <a href="#home" className=" text-gray-300 font-heading text-2xl font-bold">
+              Welcome to my Portfolio!
             </a>
           </div>
 
@@ -48,7 +48,7 @@ function Navbar (){
               <a
                 key={link.name}
                 href={link.href}
-                className="text-lavender hover:text-sunset transition-colors duration-300 font-heading text-2xl font-bold"
+                className="text-gray-300 hover:text-sunset transition-colors duration-300 font-heading text-xl font-bold"
               >
                 {link.name}
               </a>

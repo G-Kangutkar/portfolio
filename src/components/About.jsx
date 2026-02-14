@@ -1,3 +1,4 @@
+import profile from "../assets/profile.jpg";
 function About() {
   return (
     <section 
@@ -61,7 +62,7 @@ function About() {
               {/* Image container */}
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/path-to-your-photo.jpg" 
+                  src={profile} 
                   alt="Gauri Kangutkar - Full Stack Developer" 
                   className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                 />
